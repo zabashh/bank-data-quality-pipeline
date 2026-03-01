@@ -1,0 +1,17 @@
+check_category,check_name,issue_count,pass_fail,total_records,pct_affected
+Completeness,clients.kyc_status,42,FAIL,205,20.49
+Completeness,clients.email,12,FAIL,205,5.85
+Completeness,clients.risk_rating,63,FAIL,205,30.73
+Completeness,clients.nationality,18,FAIL,205,8.78
+Completeness,transactions.status,177,FAIL,1015,17.44
+Completeness,transactions.reference,162,FAIL,1015,15.96
+Completeness,transactions.counterparty,96,FAIL,1015,9.46
+Uniqueness,clients.duplicate_ids,5,FAIL,205,2.44
+Uniqueness,transactions.duplicate_ids,15,FAIL,1015,1.48
+Uniqueness,transactions.full_duplicates,15,FAIL,1015,1.48
+Referential Integrity,accounts.orphan_client_id,10,FAIL,300,3.33
+Referential Integrity,transactions.orphan_account_id,0,PASS,1015,0.0
+Validity,accounts.negative_balance,3,FAIL,300,1.0
+Validity,clients.expired_kyc_active_account,28,FAIL,205,13.66
+Validity,transactions.on_closed_frozen_accounts,549,FAIL,300,183.0
+Validity,transactions.currency_mismatch,755,FAIL,1015,74.38
